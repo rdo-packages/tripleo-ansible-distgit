@@ -37,7 +37,7 @@ BuildRequires:  python-d2to1
 Requires:       ansible
 %else
 BuildRequires:  python%{pyver}-d2to1
-Requires:       ansible-python%{pyver}
+Requires:  python3dist(ansible)
 %endif
 
 
