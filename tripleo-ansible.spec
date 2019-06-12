@@ -40,6 +40,7 @@ BuildRequires:  python%{pyver}-d2to1
 Requires:  python3dist(ansible)
 %endif
 
+Requires: ansible-role-openstack-operations
 
 %description
 
