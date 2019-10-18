@@ -31,13 +31,6 @@ BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-pbr
 
-# Handle python2 exception
-%if %{pyver} == 2
-BuildRequires:  python-d2to1
-%else
-BuildRequires:  python%{pyver}-d2to1
-%endif
-
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
