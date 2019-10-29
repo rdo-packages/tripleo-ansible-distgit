@@ -30,6 +30,11 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-pbr
+%if %{pyver} == 2
+BuildRequires: PyYAML
+%else
+BuildRequires: python%{pyver}-PyYAML
+%endif
 
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
