@@ -30,6 +30,7 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-pbr
+BuildRequires:  python%{pyver}-yaml
 
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
