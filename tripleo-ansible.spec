@@ -30,6 +30,7 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-pbr
+BuildRequires:  python%{pyver}-packaging
 %if %{pyver} == 2
 BuildRequires: PyYAML
 %else
