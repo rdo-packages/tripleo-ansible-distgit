@@ -39,7 +39,6 @@ BuildRequires: python%{pyver}-PyYAML
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
-Requires: python%{pyver}-packaging
 
 %description
 
