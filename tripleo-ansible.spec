@@ -30,7 +30,7 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  python%{pyver}-pbr
-BuildRequires:  python%{pyver}-jinja2
+BuildRequires:  python%{pyver}-jinja2 >= 2.8.0
 %if %{pyver} == 2
 BuildRequires: PyYAML
 %else
@@ -40,7 +40,7 @@ BuildRequires: python%{pyver}-PyYAML
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
-Requires: python%{pyver}-jinja2
+Requires: python%{pyver}-jinja2 >= 2.8.0
 
 %description
 
