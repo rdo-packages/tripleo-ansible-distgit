@@ -1,0 +1,8 @@
+Code-Review+2: Alex Schultz <aschultz@next-development.com>
+Workflow+1: Alex Schultz <aschultz@next-development.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 07 Feb 2020 21:52:27 +0000
+Reviewed-on: https://review.rdoproject.org/r/24850
+Project: openstack/tripleo-ansible-distgit
+Branch: refs/heads/train-rdo
