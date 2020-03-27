@@ -44,6 +44,7 @@ Requires: python%{pyver}-jinja2 >= 2.8.0
 Requires: python%{pyver}-tripleo-common
 Requires: python%{pyver}-ironicclient
 Requires: python%{pyver}-glanceclient
+Requires: tripleo-operator-ansible
 
 %description
 
