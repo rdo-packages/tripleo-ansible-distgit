@@ -16,7 +16,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        0.4.1
+Version:        0.5.0
 Release:        1%{?dist}
 Summary:        Ansible project for TripleO
 
@@ -68,6 +68,9 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Thu Apr 09 2020 RDO <dev@lists.rdoproject.org> 0.5.0-1
+- Update to 0.5.0
+
 * Mon Jan 06 2020 RDO <dev@lists.rdoproject.org> 0.4.1-1
 - Update to 0.4.1
 
