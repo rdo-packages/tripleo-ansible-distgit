@@ -1,14 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver %{python3_pkgversion}
-%else
-%global pyver 2
-%endif
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 
 %global srcname tripleo_ansible
 %global rolename tripleo-ansible
@@ -27,23 +16,19 @@ Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstrea
 
 BuildArch:      noarch
 BuildRequires:  git
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-pbr
-BuildRequires:  python%{pyver}-jinja2 >= 2.8.0
-%if %{pyver} == 2
-BuildRequires: PyYAML
-%else
-BuildRequires: python%{pyver}-PyYAML
-%endif
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-pbr
+BuildRequires:  python3-jinja2 >= 2.8.0
+BuildRequires:  python3-PyYAML
 
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
-Requires: python%{pyver}-paunch
-Requires: python%{pyver}-jinja2 >= 2.8.0
-Requires: python%{pyver}-tripleo-common
-Requires: python%{pyver}-ironicclient
-Requires: python%{pyver}-glanceclient
+Requires: python3-paunch
+Requires: python3-jinja2 >= 2.8.0
+Requires: python3-tripleo-common
+Requires: python3-ironicclient
+Requires: python3-glanceclient
 
 %description
 
@@ -54,19 +39,19 @@ Ansible project for TripleO
 
 
 %build
-%{pyver_build}
+%{py3_build}
 
 
 %install
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
-%{pyver_install}
+%{py3_install}
 
 
 %files
 %doc README*
 %license LICENSE
-%{pyver_sitelib}/%{srcname}-*.egg-info
+%{python3_sitelib}/%{srcname}-*.egg-info
 %{_datadir}/ansible/
 
 
