@@ -24,7 +24,6 @@ BuildRequires:  python3-PyYAML
 
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
-Requires: python3-paunch
 Requires: python3-jinja2 >= 2.8.0
 Requires: python3-tripleo-common
 Requires: python3-ironicclient
