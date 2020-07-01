@@ -37,6 +37,11 @@ BuildRequires: PyYAML
 BuildRequires: python%{pyver}-PyYAML
 %endif
 
+%if 0%{rhosp} == 1
+Requires: ansible >= 2.9.10
+%else
+Requires: ansible >= 2.8.0
+%endif
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
