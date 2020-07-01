@@ -38,6 +38,7 @@ BuildRequires:  python-d2to1
 BuildRequires:  python%{pyver}-d2to1
 %endif
 
+Requires: ansible >= 2.9.10
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
