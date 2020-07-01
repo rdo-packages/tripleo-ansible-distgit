@@ -22,6 +22,7 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-jinja2 >= 2.8.0
 BuildRequires:  python3-PyYAML
 
+Requires: ansible >= 2.9.10
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python3-jinja2 >= 2.8.0
