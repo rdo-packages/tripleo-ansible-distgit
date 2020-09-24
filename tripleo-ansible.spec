@@ -21,14 +21,17 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
 BuildRequires:  python3-jinja2 >= 2.8.0
 BuildRequires:  python3-PyYAML
+BuildRequires:  python3-metalsmith
 
 Requires: ansible >= 2.9.10
 Requires: ansible-config_template
+Requires: ansible-role-metalsmith-deployment >= 1.2.0
 Requires: ansible-role-openstack-operations
 Requires: python3-jinja2 >= 2.8.0
 Requires: python3-tripleo-common
 Requires: python3-ironicclient
 Requires: python3-glanceclient
+Requires: python3-metalsmith >= 1.2.0
 
 %description
 
@@ -45,6 +48,8 @@ Ansible project for TripleO
 %install
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
+# This can be removed when https://review.opendev.org/748037 is merged
+rm tripleo_ansible/ansible_plugins/modules/metalsmith_instances.py || true
 %{py3_install}
 
 
