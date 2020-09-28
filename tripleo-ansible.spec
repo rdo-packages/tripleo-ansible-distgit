@@ -48,8 +48,6 @@ Ansible project for TripleO
 %install
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
-# This can be removed when https://review.opendev.org/748037 is merged
-rm tripleo_ansible/ansible_plugins/modules/metalsmith_instances.py || true
 %{py3_install}
 
 
