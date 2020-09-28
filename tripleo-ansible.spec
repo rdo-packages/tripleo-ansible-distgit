@@ -19,8 +19,8 @@ BuildRequires:  git
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
-BuildRequires:  python3-jinja2 >= 2.8.0
 BuildRequires:  python3-PyYAML
+BuildRequires:  python3-jinja2 >= 2.8.0
 
 Requires: ansible >= 2.9.10
 Requires: ansible-config_template
