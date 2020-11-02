@@ -5,14 +5,14 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?dist}
 Summary:        Ansible project for TripleO
 
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/tripleo-ansible
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0:        https://github.com/openstack/%{rolename}/archive/%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -59,3 +59,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Mon Nov 02 2020 RDO <dev@lists.rdoproject.org> 2.0.0-1
+- Update to 2.0.0
+
