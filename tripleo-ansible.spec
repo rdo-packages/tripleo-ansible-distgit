@@ -71,3 +71,4 @@ export SKIP_PIP_INSTALL=1
 - Update to 0.1.0
 
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-ansible/commit/7d5a361fbceafe4b0741f81b5fba5d3000a59867
