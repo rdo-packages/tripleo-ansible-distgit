@@ -24,6 +24,7 @@ BuildRequires:  python3-PyYAML
 BuildRequires:  python3-metalsmith
 
 Requires: ansible >= 2.9.10
+Requires: ansible-collections-openstack >= 1.3.0
 Requires: ansible-config_template
 Requires: ansible-role-metalsmith-deployment >= 1.2.0
 Requires: ansible-role-openstack-operations
