@@ -37,7 +37,7 @@ BuildRequires: PyYAML
 BuildRequires: python%{pyver}-PyYAML
 %endif
 
-Requires: ansible >= 2.8.0
+Requires: ansible-collections-openstack >= 1.3.0
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
