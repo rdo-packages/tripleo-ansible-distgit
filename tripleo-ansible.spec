@@ -37,7 +37,12 @@ BuildRequires: PyYAML
 BuildRequires: python%{pyver}-PyYAML
 %endif
 
+<<<<<<< HEAD   (a1abcd tripleo-ansible-0.7.0-1)
 Requires: ansible >= 2.8.0
+=======
+Requires: ansible >= 2.9.10
+Requires: ansible-collections-openstack >= 1.3.0
+>>>>>>> CHANGE (04b9f8 Add ansible-collections-openstack package as a dependency fo)
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
