@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Workflow+1: Javier Peña <jpena@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 09 Apr 2021 10:49:34 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/tripleo-ansible-distgit/+/33054
+Project: openstack/tripleo-ansible-distgit
+Branch: refs/heads/victoria-rdo
