@@ -39,6 +39,10 @@ BuildRequires: python%{pyver}-PyYAML
 
 Requires: ansible >= 2.8.0
 Requires: ansible-collections-openstack >= 1.3.0
+Requires: ansible-collection-ansible-netcommon >= 1.5.0
+Requires: ansible-collection-ansible-posix >= 1.2.0
+Requires: ansible-collection-community-general >= 2.5.1
+Requires: ansible-collection-containers-podman >= 1.4.1
 Requires: ansible-config_template
 Requires: ansible-role-openstack-operations
 Requires: python%{pyver}-paunch
