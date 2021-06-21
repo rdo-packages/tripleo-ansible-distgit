@@ -30,8 +30,10 @@ Requires: ansible-collection-ansible-posix >= 1.2.0
 Requires: ansible-collection-community-general >= 2.5.1
 Requires: ansible-collection-containers-podman >= 1.4.1
 Requires: ansible-config_template
+Requires: ansible-role-collectd-config
 Requires: ansible-role-metalsmith-deployment >= 1.2.0
 Requires: ansible-role-openstack-operations
+Requires: ansible-role-qdr-config
 Requires: python3-jinja2 >= 2.8.0
 Requires: python3-tripleo-common
 Requires: python3-ironicclient
