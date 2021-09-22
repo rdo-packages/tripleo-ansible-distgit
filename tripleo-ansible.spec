@@ -23,7 +23,7 @@ BuildRequires:  python3-jinja2 >= 2.8.0
 BuildRequires:  python3-PyYAML
 BuildRequires:  python3-metalsmith
 
-Requires: ansible >= 2.9.10
+Requires: (python3dist(ansible) >= 2.9.10 or ansible-core)
 Requires: ansible-collections-openstack >= 1.3.0
 Requires: ansible-collection-ansible-netcommon >= 1.5.0
 Requires: ansible-collection-ansible-posix >= 1.2.0
