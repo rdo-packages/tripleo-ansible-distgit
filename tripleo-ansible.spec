@@ -38,7 +38,8 @@ Requires: python3-jinja2 >= 2.8.0
 Requires: python3-tripleo-common >= 16.0.0
 Requires: python3-ironicclient
 Requires: python3-glanceclient
-Requires: python3-metalsmith >= 1.2.0
+Requires: python3-metalsmith
+Requires: python3-heatclient
 
 %description
 
