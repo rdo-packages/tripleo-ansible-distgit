@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e802985a_4bfd97c4",
+        "filename": "tripleo-ansible.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-10-15T10:32:51Z",
+      "side": 1,
+      "message": "I\u0027d maintaint minimal version even if it\u0027s not in requirements.txt. It\u0027s a bit weird to remove a minimal version i a newer release tbh.",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 1
+      },
+      "revId": "7322159577a05d7c3feafff98d0868de094ebcf1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
