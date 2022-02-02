@@ -78,3 +78,4 @@ export SKIP_PIP_INSTALL=1
 * Mon Nov 02 2020 RDO <dev@lists.rdoproject.org> 2.0.0-1
 - Update to 2.0.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-ansible/commit/5b94b88b78ff9a402cfa6b4ea4a5f50507e6a427
