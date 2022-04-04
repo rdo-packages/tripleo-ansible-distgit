@@ -20,7 +20,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
 BuildRequires:  python3-jinja2 >= 2.8.0
-BuildRequires:  python3-PyYAML
+BuildRequires:  python3-pyyaml
 BuildRequires:  python3-metalsmith
 
 Requires: (python3dist(ansible) >= 2.9.10 or ansible-core)
