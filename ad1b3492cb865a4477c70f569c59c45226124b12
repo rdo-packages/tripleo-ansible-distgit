@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ec2a327_4b827767",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-04-13T15:47:46Z",
+      "side": 1,
+      "message": "https://tarballs.openstack.org/tripleo-ansible/tripleo-ansible-4.2.0.tar.gz 404",
+      "revId": "ad1b3492cb865a4477c70f569c59c45226124b12",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
