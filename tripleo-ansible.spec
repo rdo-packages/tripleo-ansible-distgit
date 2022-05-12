@@ -24,7 +24,7 @@ BuildRequires:  python3-PyYAML
 BuildRequires:  python3-metalsmith
 
 Requires: (python3dist(ansible) >= 2.9.10 or ansible-core)
-Requires: ansible-collections-openstack >= 1.3.0
+Requires: (ansible-collections-openstack >= 1.3.0 and ansible-collections-openstack < 2.0.0)
 Requires: ansible-collection-ansible-netcommon >= 1.5.0
 Requires: ansible-collection-ansible-posix >= 1.2.0
 Requires: ansible-collection-community-general >= 2.5.1
