@@ -14,6 +14,7 @@ License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/tripleo-ansible
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
+
 BuildArch:      noarch
 BuildRequires:  git-core
 BuildRequires:  python3-devel
