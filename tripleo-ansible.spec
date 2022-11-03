@@ -5,8 +5,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        5.0.0
+Release:        1%{?dist}
 Summary:        Ansible project for TripleO
 
 Group:          System Environment/Base
@@ -67,3 +67,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Thu Nov 03 2022 RDO <dev@lists.rdoproject.org> 5.0.0-1
+- Update to 5.0.0
+
