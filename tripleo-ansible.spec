@@ -6,7 +6,7 @@
 
 Name:           %{rolename}
 Version:        3.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Ansible project for TripleO
 
 Group:          System Environment/Base
@@ -23,7 +23,7 @@ BuildRequires:  python3-jinja2 >= 2.8.0
 BuildRequires:  python3-PyYAML
 BuildRequires:  python3-metalsmith
 
-Requires: (python3dist(ansible) >= 2.9.10 or ansible-core)
+Requires: openstack-ansible-core
 Requires: ansible-collections-openstack >= 1.3.0
 Requires: ansible-collection-ansible-netcommon >= 1.5.0
 Requires: ansible-collection-ansible-posix >= 1.2.0
@@ -66,6 +66,9 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Tue Apr 18 2023 Alfredo Moralejo <amoralej@redhat.com> 3.3.0-2
+- Depend on openstack-ansible-core for compatibility with python 3.9
+
 * Mon Aug 16 2021 RDO <dev@lists.rdoproject.org> 3.3.0-1
 - Update to 3.3.0
 
@@ -77,4 +80,3 @@ export SKIP_PIP_INSTALL=1
 
 * Thu May 06 2021 RDO <dev@lists.rdoproject.org> 3.1.0-1
 - Update to 3.1.0
-
