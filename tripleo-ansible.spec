@@ -6,7 +6,7 @@
 
 Name:           %{rolename}
 Version:        3.3.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Ansible project for TripleO
 
 Group:          System Environment/Base
@@ -43,6 +43,7 @@ Requires: python3-tripleo-common
 Requires: python3-ironicclient
 Requires: python3-glanceclient
 Requires: python3-metalsmith >= 1.2.0
+Requires: ansible-role-chrony
 
 %description
 
@@ -70,6 +71,9 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Tue Apr 25 2023 Bhagyashri Shewale <bshewale@redhat.com> 3.3.0-3
+- Add ansible-role-chrony dependency
+
 * Tue Apr 18 2023 Alfredo Moralejo <amoralej@redhat.com> 3.3.0-2
 - Depend on openstack-ansible-core for compatibility with python 3.9
 
